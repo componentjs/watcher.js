@@ -1,0 +1,51 @@
+{
+  "fields": [
+    "scripts",
+    "styles",
+    "templates",
+    "json",
+    "fonts",
+    "images",
+    "files"
+  ],
+  "extensions": {
+    "scripts": [
+      "js",
+      "json",
+      "html"
+    ],
+    "styles": [
+      "css"
+    ],
+    "files": [
+
+    ]
+  },
+  "options": {
+    "resolver": {
+
+    },
+    "scripts": {
+      "builder": {
+        "concurrency": 64
+      }
+    },
+    "styles": {
+      "builder": {
+        "concurrency": 64
+      },
+      "browsers": null
+    },
+    "files": {
+      "builder": {
+        "concurrency": 64
+      },
+      "copy": false,
+      "fields": [
+        "fonts",
+        "images",
+        "files"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "locals": [
+    "outdated-range",
+    "outdated-version",
+    "scripts",
+    "json",
+    "templates",
+    "styles",
+    "files"
+  ]
+}

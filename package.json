@@ -1,0 +1,40 @@
+{
+  "name": "component-watcher",
+  "description": "build watching utility for component",
+  "version": "0.0.0",
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "twitter": "https://twitter.com/jongleberry"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/watcher.js.git"
+  },
+  "bugs": {
+    "mail": "me@jongleberry.com",
+    "url": "https://github.com/component/watcher.js/issues"
+  },
+  "dependencies": {
+    "co": "^3.0.2",
+    "gaze": "~0.4.3",
+    "mkdirp": "~0.3.5",
+    "remotes": "~0.0.0",
+    "component-resolver": "~0.0.0",
+    "component-builder2": "~0.0.0",
+    "component-versions": "~0.0.0",
+    "autoprefixer": "~1.0.0"
+  },
+  "devDependencies": {
+    "regenerator": "*"
+  },
+  "scripts": {
+    "start": "node --harmony-generators .",
+    "prepublish": "make clean build"
+  },
+  "engines": {
+    "node": ">= 0.11.9"
+  }
+}

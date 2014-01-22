@@ -1,0 +1,10 @@
+{
+  "name": "watcher",
+  "private": true,
+  "paths": [
+    "test"
+  ],
+  "locals": [
+    "boot"
+  ]
+}
