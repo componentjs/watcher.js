@@ -3,7 +3,7 @@
 A build watcher for component. [component(1)](https://github.com/component/component) will integrate a lot of these features once they are stable. You are expected to fork this if you want your own watcher or builder - do not expect every possible option.
 There are just too many.
 
-![](http://i.imgur.com/FoeoIl5.png)
+![](http://i.imgur.com/YHR3m0F.png)
 
 Features:
 
