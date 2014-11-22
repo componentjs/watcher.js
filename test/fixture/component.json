@@ -1,5 +1,8 @@
 {
   "paths": ["lib"],
   "scripts": ["index.js"],
-  "styles": ["index.css"]
+  "styles": ["index.css"],
+  "development": {
+    "scripts": ["test.js"]
+  }
 }

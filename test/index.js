@@ -214,6 +214,28 @@ describe('Component Watcher', function () {
       })
     })
   })
+
+  describe('when boot/test.js is touched', function () {
+    it('should emit "resolve"', function (done) {
+
+      var watcher = watch({
+        root: options.root,
+        development: true
+      })
+
+      watcher.once('resolve', function () {
+        watcher.once('scripts', function () {
+          setImmediate(watcher.close)
+          done();
+        })
+
+        watcher.on('resolve', fail);
+        watcher.on('styles', fail);
+
+        fs.utimes(resolve(root, 'test.js'), new Date(), new Date());
+      })
+    })
+  })
 })
 
 function fail() {
