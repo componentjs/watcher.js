@@ -142,8 +142,8 @@ module.exports = function componentWatcher(options) {
       // only add globs if necessary
       if (!~globs.indexOf(path)) globs.push(path);
     });
-    // do the same for development if --dev was passed
-    if (options.development) {
+    // do the same for development if --dev was passed and a development property exists
+    if (options.development && json.development) {
       (json.development[field] || []).forEach(function (path) {
         if (path.slice(2) === '..') throw new Error('invalid path: ' + path);
         if (path.slice(1) === '/') throw new Error('invalid path: ' + path);
