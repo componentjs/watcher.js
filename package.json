@@ -15,9 +15,9 @@
     "sane": "0"
   },
   "devDependencies": {
-    "mocha": "^1.18.0",
-    "rimraf": "^2.0.0",
-    "mkdirp": "0"
+    "mkdirp": "0",
+    "mocha": "^1.21.5",
+    "rimraf": "^2.0.0"
   },
   "scripts": {
     "test": "mocha --reporter spec --bail"
